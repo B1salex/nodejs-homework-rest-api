@@ -27,7 +27,7 @@ const removeContact = async (req, res) => {
   if (!removeBook) {
     throw HttpError(404, `Not found contact with id:${contactId}`);
   }
-  res.json({ message: "Remove success" });
+  res.json({ message: "missing required name field" });
 };
 
 const updateContactById = async (req, res) => {
